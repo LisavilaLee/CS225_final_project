@@ -1,0 +1,65 @@
+{
+    "scenes": [
+      {
+        "id": "scene_1_cubic",
+        "delay1_ms": 5,
+        "delay2_ms": 5,
+        "loss1_pct": 0,
+        "loss2_pct": 0,
+        "bw1_mbps": 10,
+        "bw2_mbps": 10,
+        "cc": "cubic"
+      },
+      {
+        "id": "scene_1_bbr",
+        "delay1_ms": 5,
+        "delay2_ms": 5,
+        "loss1_pct": 0,
+        "loss2_pct": 0,
+        "bw1_mbps": 10,
+        "bw2_mbps": 10,
+        "cc": "bbr"
+      },
+      {
+        "id": "scene_2_cubic",
+        "delay1_ms": 5,
+        "delay2_ms": 35,
+        "loss1_pct": 1,
+        "loss2_pct": 0,
+        "bw1_mbps": 10,
+        "bw2_mbps": 10,
+        "cc": "cubic"
+      },
+      {
+        "id": "scene_2_bbr",
+        "delay1_ms": 5,
+        "delay2_ms": 35,
+        "loss1_pct": 1,
+        "loss2_pct": 0,
+        "bw1_mbps": 10,
+        "bw2_mbps": 10,
+        "cc": "bbr"
+      },
+      {
+        "id": "scene_3_cubic",
+        "delay1_ms": 5,
+        "delay2_ms": 35,
+        "loss1_pct": 2,
+        "loss2_pct": 0,
+        "bw1_mbps": 10,
+        "bw2_mbps": 10,
+        "cc": "cubic"
+      },
+      {
+        "id": "scene_3_bbr",
+        "delay1_ms": 5,
+        "delay2_ms": 35,
+        "loss1_pct": 2,
+        "loss2_pct": 0,
+        "bw1_mbps": 10,
+        "bw2_mbps": 10,
+        "cc": "bbr"
+      }
+    ]
+  }
+  
