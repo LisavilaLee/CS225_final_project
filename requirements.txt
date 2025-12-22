@@ -1,0 +1,13 @@
+# CS225 Final Project - Python Dependencies
+
+# Core dependencies for emulation
+mininet>=2.3.0.dev6  # 允许开发版本
+
+# Dependencies for notebooks (optional, for data analysis)
+jupyterlab>=3.0.0
+matplotlib>=3.0.0
+pandas>=1.0.0
+
+# Development tools (optional)
+ipython>=7.0.0
+

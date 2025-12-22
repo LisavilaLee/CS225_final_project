@@ -14,7 +14,7 @@ class LinuxTCPBenchmark(Benchmark):
         net.set_tcp_congestion_control(cca)
 
     def start_server(self, timeout: int=SETUP_TIMEOUT):
-        cmd = f'python3 webserver/http_server.py --server-ip {self.server.IP()} '\
+        cmd = f'python3 -u webserver/http_server.py --server-ip {self.server.IP()} '\
               f'--certfile {self.certfile} --keyfile {self.keyfile} '\
               f'-n {self.n}'
 

@@ -57,7 +57,7 @@ def run(server_ip, server_port, certfile, keyfile):
     ctx.load_cert_chain(certfile=certfile, keyfile=keyfile)
     httpd.socket = ctx.wrap_socket(httpd.socket, server_side=True)
 
-    print(f'Serving on https://{server_ip}:{server_port}', file=sys.stderr)
+    print(f'Serving on https://{server_ip}:{server_port}', file=sys.stderr, flush=True)
     httpd.serve_forever()
 
 if __name__ == '__main__':

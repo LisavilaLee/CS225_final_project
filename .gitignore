@@ -30,3 +30,4 @@ deps/picoquic/
 ubuntu-jammy/
 
 .venv/
+bin/

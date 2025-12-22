@@ -80,13 +80,23 @@ def run_emulation(
         cmd.append("--pep")
 
     # ---- 子命令 tcp 及其参数（必须在最后） ----
-    cmd += [
-        "tcp",
-        "-n",
-        str(args.n_bytes),
-        "--congestion-control",
-        scene.cc,
-    ]
+    # 根据 CC 算法选择协议
+    if scene.cc in ['bbr', 'bbr3']:
+        cmd += [
+            "picoquic",  # 使用 picoquic 替代 tcp
+            "-n",
+            str(args.n_bytes),
+            "--congestion-control",
+            "bbr"
+        ]
+    else:
+        cmd += [
+            "tcp",
+            "-n",
+            str(args.n_bytes),
+            "--congestion-control",
+            scene.cc,
+        ]
 
     print(f"[INFO] Running scene={scene.scene_id}, cc={scene.cc}, "
           f"strategy={strategy}, pep={pep}")
@@ -143,7 +153,7 @@ def main() -> None:
     parser.add_argument(
         "--logdir",
         type=str,
-        default="/tmp/connection-splitting-demo",
+        default="logs/",
         help="Directory where host logs are written.",
     )
     parser.add_argument(
