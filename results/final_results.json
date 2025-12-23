@@ -1,0 +1,2774 @@
+[
+  {
+    "inputs": {
+      "label": "scene_1_cubic_cubic_no_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:46:17",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3739,
+            3572,
+            3738,
+            3571,
+            3562,
+            3758,
+            3726,
+            3561
+          ],
+          "tx_bytes": [
+            10262788,
+            240559,
+            10262662,
+            240413,
+            239659,
+            10365094,
+            10261622,
+            239545
+          ],
+          "rx_packets": [
+            3562,
+            3726,
+            3560,
+            3758,
+            3739,
+            3573,
+            3573,
+            3738
+          ],
+          "rx_bytes": [
+            239659,
+            10261622,
+            239459,
+            10365094,
+            10262788,
+            240585,
+            240645,
+            10262662
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.456489481031895,
+        "throughput_mbps": 9.460190328320266
+      }
+    ],
+    "scene_id": "scene_1_cubic",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "cubic",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_cubic_cubic_always_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:46:28",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3907,
+            3277,
+            3723,
+            3561,
+            3266,
+            3760,
+            3932,
+            3552
+          ],
+          "tx_bytes": [
+            10273778,
+            221817,
+            10261664,
+            240757,
+            220863,
+            10405770,
+            10373706,
+            239967
+          ],
+          "rx_packets": [
+            3266,
+            3931,
+            3552,
+            3760,
+            3908,
+            3562,
+            3278,
+            3724
+          ],
+          "rx_bytes": [
+            220863,
+            10373616,
+            239967,
+            10405770,
+            10273978,
+            240867,
+            221927,
+            10261718
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.509599268436432,
+        "throughput_mbps": 9.401147748135893
+      }
+    ],
+    "scene_id": "scene_1_cubic",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "cubic",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_cubic_cubic_adaptive_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:46:40",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3654,
+            3480,
+            3650,
+            3478,
+            3471,
+            3677,
+            3643,
+            3469
+          ],
+          "tx_bytes": [
+            10257078,
+            234779,
+            10256774,
+            234635,
+            234025,
+            10358320,
+            10256144,
+            233845
+          ],
+          "rx_packets": [
+            3470,
+            3643,
+            3469,
+            3676,
+            3656,
+            3480,
+            3483,
+            3653
+          ],
+          "rx_bytes": [
+            233935,
+            10256144,
+            233845,
+            10358234,
+            10257278,
+            234635,
+            235065,
+            10257000
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.457074573263526,
+        "throughput_mbps": 9.45953583676732
+      }
+    ],
+    "scene_id": "scene_1_cubic",
+    "strategy": "adaptive_split",
+    "pep": false,
+    "cca": "cubic",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr_bbr_no_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:46:51",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3554,
+            3421,
+            3551,
+            3419,
+            3412,
+            3584,
+            3543,
+            3411
+          ],
+          "tx_bytes": [
+            10250478,
+            230693,
+            10250264,
+            230549,
+            229939,
+            10370986,
+            10249544,
+            229849
+          ],
+          "rx_packets": [
+            3411,
+            3543,
+            3410,
+            3584,
+            3556,
+            3419,
+            3424,
+            3552
+          ],
+          "rx_bytes": [
+            229849,
+            10249544,
+            229759,
+            10370986,
+            10250678,
+            230549,
+            230983,
+            10250374
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.451883424073458,
+        "throughput_mbps": 9.465345886354324
+      }
+    ],
+    "scene_id": "scene_1_bbr",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr_bbr_always_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:47:02",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3587,
+            3497,
+            3550,
+            3417,
+            3488,
+            3580,
+            3697,
+            3408
+          ],
+          "tx_bytes": [
+            10252668,
+            246053,
+            10250130,
+            230101,
+            245263,
+            10354794,
+            10586900,
+            229311
+          ],
+          "rx_packets": [
+            3488,
+            3697,
+            3408,
+            3580,
+            3587,
+            3417,
+            3497,
+            3552
+          ],
+          "rx_bytes": [
+            245263,
+            10586900,
+            229311,
+            10354794,
+            10252668,
+            230101,
+            246053,
+            10250290
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.509556211531162,
+        "throughput_mbps": 9.401195316342502
+      }
+    ],
+    "scene_id": "scene_1_bbr",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr_bbr_adaptive_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:47:13",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3553,
+            3422,
+            3551,
+            3422,
+            3414,
+            3582,
+            3544,
+            3412
+          ],
+          "tx_bytes": [
+            10250424,
+            230751,
+            10250260,
+            230747,
+            230051,
+            10363614,
+            10249630,
+            229871
+          ],
+          "rx_packets": [
+            3413,
+            3543,
+            3412,
+            3582,
+            3557,
+            3422,
+            3424,
+            3551
+          ],
+          "rx_bytes": [
+            229961,
+            10249544,
+            229871,
+            10363614,
+            10250800,
+            230747,
+            230951,
+            10250260
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.452594012022018,
+        "throughput_mbps": 9.4645501589473
+      }
+    ],
+    "scene_id": "scene_1_bbr",
+    "strategy": "adaptive_split",
+    "pep": false,
+    "cca": "bbr",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr2_bbr2_no_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:47:24",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            9661,
+            6828,
+            9658,
+            6828,
+            6816,
+            11721,
+            9645,
+            6814
+          ],
+          "tx_bytes": [
+            10868381,
+            678165,
+            10868059,
+            678129,
+            677125,
+            13379834,
+            10866989,
+            676949
+          ],
+          "rx_packets": [
+            6815,
+            9645,
+            6814,
+            11721,
+            9661,
+            6828,
+            6829,
+            9658
+          ],
+          "rx_bytes": [
+            677039,
+            10866989,
+            676949,
+            13379834,
+            10868381,
+            678129,
+            678251,
+            10868059
+          ]
+        },
+        "timeout": false,
+        "time_s": 19.983960147,
+        "throughput_mbps": 4.0032105454338405
+      }
+    ],
+    "scene_id": "scene_1_bbr2",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr2",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr2_bbr2_always_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:47:49",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            9334,
+            6624,
+            9330,
+            6624,
+            6614,
+            11109,
+            9320,
+            6612
+          ],
+          "tx_bytes": [
+            10841084,
+            638718,
+            10840648,
+            638682,
+            637898,
+            13115664,
+            10839864,
+            637694
+          ],
+          "rx_packets": [
+            6613,
+            9319,
+            6611,
+            11108,
+            9337,
+            6627,
+            6628,
+            9334
+          ],
+          "rx_bytes": [
+            637698,
+            10839778,
+            637608,
+            13115554,
+            10841334,
+            638964,
+            639082,
+            10841044
+          ]
+        },
+        "timeout": false,
+        "time_s": 18.705201508,
+        "throughput_mbps": 4.27688522712706
+      }
+    ],
+    "scene_id": "scene_1_bbr2",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr2",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr2_bbr2_adaptive_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:48:13",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            9573,
+            6596,
+            9571,
+            6591,
+            6582,
+            11461,
+            9558,
+            6580
+          ],
+          "tx_bytes": [
+            10861276,
+            637233,
+            10861120,
+            636771,
+            636021,
+            13233235,
+            10859970,
+            635817
+          ],
+          "rx_packets": [
+            6582,
+            9558,
+            6579,
+            11461,
+            9573,
+            6592,
+            6596,
+            9571
+          ],
+          "rx_bytes": [
+            636021,
+            10859970,
+            635731,
+            13233235,
+            10861276,
+            636857,
+            637233,
+            10861120
+          ]
+        },
+        "timeout": false,
+        "time_s": 20.066431659,
+        "throughput_mbps": 3.9867576537515172
+      }
+    ],
+    "scene_id": "scene_1_bbr2",
+    "strategy": "adaptive_split",
+    "pep": false,
+    "cca": "bbr2",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr3_bbr3_no_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:48:37",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7139,
+            1494,
+            7135,
+            1487,
+            1479,
+            7133,
+            7124,
+            1476
+          ],
+          "tx_bytes": [
+            10547233,
+            147552,
+            10546893,
+            146926,
+            146226,
+            10559241,
+            10545903,
+            145936
+          ],
+          "rx_packets": [
+            1479,
+            7124,
+            1476,
+            7133,
+            7139,
+            1488,
+            1494,
+            7135
+          ],
+          "rx_bytes": [
+            146226,
+            10545903,
+            145936,
+            10559241,
+            10547233,
+            147012,
+            147552,
+            10546893
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.578571,
+        "throughput_mbps": 9.325562497530182
+      }
+    ],
+    "scene_id": "scene_1_bbr3",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr3",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr3_bbr3_always_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:48:48",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7138,
+            1488,
+            7136,
+            1486,
+            1477,
+            7132,
+            7125,
+            1475
+          ],
+          "tx_bytes": [
+            10547147,
+            147036,
+            10546935,
+            146726,
+            146050,
+            10557747,
+            10545981,
+            145850
+          ],
+          "rx_packets": [
+            1477,
+            7125,
+            1475,
+            7131,
+            7138,
+            1488,
+            1488,
+            7136
+          ],
+          "rx_bytes": [
+            146050,
+            10545981,
+            145850,
+            10557661,
+            10547147,
+            146980,
+            147036,
+            10546935
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.60013,
+        "throughput_mbps": 9.30218496697143
+      }
+    ],
+    "scene_id": "scene_1_bbr3",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr3",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_1_bbr3_bbr3_adaptive_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:48:59",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7138,
+            1490,
+            7134,
+            1488,
+            1478,
+            7134,
+            7123,
+            1477
+          ],
+          "tx_bytes": [
+            10547163,
+            147156,
+            10546843,
+            147016,
+            146116,
+            10560763,
+            10545857,
+            146026
+          ],
+          "rx_packets": [
+            1477,
+            7123,
+            1477,
+            7134,
+            7139,
+            1488,
+            1491,
+            7134
+          ],
+          "rx_bytes": [
+            146030,
+            10545857,
+            146026,
+            10560763,
+            10547253,
+            147016,
+            147242,
+            10546843
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.603612,
+        "throughput_mbps": 9.298420244892494
+      }
+    ],
+    "scene_id": "scene_1_bbr3",
+    "strategy": "adaptive_split",
+    "pep": false,
+    "cca": "bbr3",
+    "derived_rtt_ms": 20.0,
+    "derived_loss_pct": 0.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_cubic_cubic_no_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:49:10",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3745,
+            3526,
+            3778,
+            3525,
+            3554,
+            3779,
+            3764,
+            3512
+          ],
+          "tx_bytes": [
+            10263192,
+            243851,
+            10365080,
+            243685,
+            245623,
+            10401240,
+            10364050,
+            242647
+          ],
+          "rx_packets": [
+            3553,
+            3765,
+            3511,
+            3779,
+            3744,
+            3528,
+            3527,
+            3779
+          ],
+          "rx_bytes": [
+            245513,
+            10364116,
+            242561,
+            10401240,
+            10263126,
+            243991,
+            243937,
+            10365300
+          ]
+        },
+        "timeout": false,
+        "time_s": 31.319294821470976,
+        "throughput_mbps": 2.554335927932704
+      }
+    ],
+    "scene_id": "scene_2_cubic",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "cubic",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_cubic_cubic_always_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:49:44",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3976,
+            3246,
+            3744,
+            3576,
+            3264,
+            3751,
+            4007,
+            3564
+          ],
+          "tx_bytes": [
+            10278430,
+            221771,
+            10263082,
+            241755,
+            222783,
+            10319744,
+            10397456,
+            240715
+          ],
+          "rx_packets": [
+            3264,
+            4007,
+            3564,
+            3751,
+            3976,
+            3577,
+            3246,
+            3745
+          ],
+          "rx_bytes": [
+            222783,
+            10397456,
+            240715,
+            10319744,
+            10278430,
+            241845,
+            221771,
+            10263192
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.986827621236444,
+        "throughput_mbps": 8.901917714651043
+      }
+    ],
+    "scene_id": "scene_2_cubic",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "cubic",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_cubic_cubic_adaptive_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:49:55",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3805,
+            3315,
+            3704,
+            2975,
+            3334,
+            3716,
+            3829,
+            2966
+          ],
+          "tx_bytes": [
+            10267024,
+            223553,
+            10260366,
+            203005,
+            224607,
+            10321778,
+            10352980,
+            202215
+          ],
+          "rx_packets": [
+            3334,
+            3829,
+            2966,
+            3716,
+            3809,
+            2976,
+            3316,
+            3705
+          ],
+          "rx_bytes": [
+            224607,
+            10352980,
+            202215,
+            10321778,
+            10267328,
+            203059,
+            223607,
+            10260420
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.009735090658069,
+        "throughput_mbps": 8.879284373516116
+      }
+    ],
+    "scene_id": "scene_2_cubic",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "cubic",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr_bbr_no_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:50:07",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3608,
+            3487,
+            3635,
+            3484,
+            3514,
+            3735,
+            3627,
+            3476
+          ],
+          "tx_bytes": [
+            10254042,
+            253095,
+            10341200,
+            252895,
+            255027,
+            10645936,
+            10340520,
+            252215
+          ],
+          "rx_packets": [
+            3512,
+            3627,
+            3476,
+            3735,
+            3611,
+            3487,
+            3492,
+            3638
+          ],
+          "rx_bytes": [
+            254851,
+            10340520,
+            252215,
+            10645936,
+            10254328,
+            253059,
+            253607,
+            10341474
+          ]
+        },
+        "timeout": false,
+        "time_s": 8.85688092187047,
+        "throughput_mbps": 9.03252518642928
+      }
+    ],
+    "scene_id": "scene_2_bbr",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr_bbr_always_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:50:19",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3592,
+            3425,
+            3565,
+            3454,
+            3447,
+            3615,
+            3621,
+            3444
+          ],
+          "tx_bytes": [
+            10252876,
+            232513,
+            10251128,
+            234879,
+            233857,
+            10413620,
+            10367484,
+            234035
+          ],
+          "rx_packets": [
+            3447,
+            3621,
+            3444,
+            3614,
+            3592,
+            3455,
+            3426,
+            3567
+          ],
+          "rx_bytes": [
+            233857,
+            10367484,
+            234035,
+            10413510,
+            10252986,
+            234965,
+            232623,
+            10251324
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.007581509649754,
+        "throughput_mbps": 8.881407280555454
+      }
+    ],
+    "scene_id": "scene_2_bbr",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr_bbr_adaptive_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:50:31",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3576,
+            3418,
+            3570,
+            3114,
+            3437,
+            3621,
+            3610,
+            3105
+          ],
+          "tx_bytes": [
+            10251898,
+            231843,
+            10251494,
+            212231,
+            233005,
+            10415420,
+            10372722,
+            211441
+          ],
+          "rx_packets": [
+            3436,
+            3609,
+            3105,
+            3621,
+            3577,
+            3114,
+            3420,
+            3571
+          ],
+          "rx_bytes": [
+            232919,
+            10372636,
+            211441,
+            10415420,
+            10251984,
+            212231,
+            232003,
+            10251580
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.123840726912022,
+        "throughput_mbps": 8.768237236324063
+      }
+    ],
+    "scene_id": "scene_2_bbr",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "bbr",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr2_bbr2_no_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:50:42",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            8732,
+            6579,
+            8819,
+            6577,
+            6631,
+            9597,
+            8805,
+            6565
+          ],
+          "tx_bytes": [
+            10787423,
+            735276,
+            10900722,
+            735100,
+            741243,
+            11885721,
+            10899506,
+            734060
+          ],
+          "rx_packets": [
+            6631,
+            8805,
+            6565,
+            9597,
+            8733,
+            6578,
+            6583,
+            8820
+          ],
+          "rx_bytes": [
+            741157,
+            10899506,
+            734060,
+            11885721,
+            10787533,
+            735100,
+            735612,
+            10900808
+          ]
+        },
+        "timeout": false,
+        "time_s": 14.840377879,
+        "throughput_mbps": 5.390698313228578
+      }
+    ],
+    "scene_id": "scene_2_bbr2",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr2",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr2_bbr2_always_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:51:02",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            8773,
+            7835,
+            8843,
+            7834,
+            7901,
+            10567,
+            8834,
+            7824
+          ],
+          "tx_bytes": [
+            10787302,
+            933085,
+            10879936,
+            933031,
+            941001,
+            13110004,
+            10879146,
+            932191
+          ],
+          "rx_packets": [
+            7901,
+            8834,
+            7823,
+            10566,
+            8773,
+            7836,
+            7836,
+            8845
+          ],
+          "rx_bytes": [
+            941001,
+            10879146,
+            932101,
+            13109918,
+            10787338,
+            933231,
+            933175,
+            10880132
+          ]
+        },
+        "timeout": false,
+        "time_s": 11.446735168,
+        "throughput_mbps": 6.988892363269184
+      }
+    ],
+    "scene_id": "scene_2_bbr2",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr2",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr2_bbr2_adaptive_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:51:18",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            8681,
+            8357,
+            8754,
+            8355,
+            8430,
+            11372,
+            8745,
+            8345
+          ],
+          "tx_bytes": [
+            10780387,
+            1085123,
+            10870988,
+            1084963,
+            1094720,
+            14253065,
+            10870158,
+            1084087
+          ],
+          "rx_packets": [
+            8429,
+            8744,
+            8345,
+            11372,
+            8682,
+            8357,
+            8360,
+            8756
+          ],
+          "rx_bytes": [
+            1094610,
+            10870072,
+            1084087,
+            14253065,
+            10780441,
+            1085159,
+            1085417,
+            10871184
+          ]
+        },
+        "timeout": false,
+        "time_s": 10.181485799,
+        "throughput_mbps": 7.857399359910455
+      }
+    ],
+    "scene_id": "scene_2_bbr2",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "bbr2",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr3_bbr3_no_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:51:32",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7138,
+            940,
+            7207,
+            935,
+            938,
+            7208,
+            7194,
+            925
+          ],
+          "tx_bytes": [
+            10546539,
+            93832,
+            10651633,
+            93402,
+            93762,
+            10668431,
+            10650451,
+            92502
+          ],
+          "rx_packets": [
+            938,
+            7194,
+            925,
+            7208,
+            7138,
+            935,
+            940,
+            7208
+          ],
+          "rx_bytes": [
+            93762,
+            10650451,
+            92502,
+            10668431,
+            10546539,
+            93402,
+            93832,
+            10651687
+          ]
+        },
+        "timeout": false,
+        "time_s": 10.016148,
+        "throughput_mbps": 7.987102427000879
+      }
+    ],
+    "scene_id": "scene_2_bbr3",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr3",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr3_bbr3_always_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:51:45",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7135,
+            956,
+            7193,
+            953,
+            947,
+            7193,
+            7181,
+            941
+          ],
+          "tx_bytes": [
+            10546310,
+            95382,
+            10633686,
+            95128,
+            94640,
+            10649002,
+            10632614,
+            94052
+          ],
+          "rx_packets": [
+            947,
+            7181,
+            941,
+            7192,
+            7135,
+            954,
+            956,
+            7196
+          ],
+          "rx_bytes": [
+            94640,
+            10632614,
+            94052,
+            10648916,
+            10546310,
+            95182,
+            95382,
+            10633936
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.972192,
+        "throughput_mbps": 8.022308435296873
+      }
+    ],
+    "scene_id": "scene_2_bbr3",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr3",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_2_bbr3_bbr3_adaptive_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:51:57",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7137,
+            882,
+            7219,
+            881,
+            880,
+            7222,
+            7206,
+            869
+          ],
+          "tx_bytes": [
+            10546462,
+            88177,
+            10669398,
+            88111,
+            88133,
+            10690588,
+            10668248,
+            87067
+          ],
+          "rx_packets": [
+            879,
+            7206,
+            869,
+            7221,
+            7138,
+            881,
+            884,
+            7221
+          ],
+          "rx_bytes": [
+            88023,
+            10668248,
+            87067,
+            10690478,
+            10546548,
+            88111,
+            88377,
+            10669398
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.188123,
+        "throughput_mbps": 8.70689258295737
+      }
+    ],
+    "scene_id": "scene_2_bbr3",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "bbr3",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 1.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_cubic_cubic_no_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:52:09",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3942,
+            3664,
+            4029,
+            3666,
+            3721,
+            4034,
+            4017,
+            3653
+          ],
+          "tx_bytes": [
+            10276074,
+            255895,
+            10512024,
+            256075,
+            259709,
+            10554182,
+            10511068,
+            255005
+          ],
+          "rx_packets": [
+            3720,
+            4018,
+            3653,
+            4034,
+            3946,
+            3668,
+            3669,
+            4030
+          ],
+          "rx_bytes": [
+            259599,
+            10511134,
+            255005,
+            10554182,
+            10276458,
+            256161,
+            256145,
+            10512078
+          ]
+        },
+        "timeout": false,
+        "time_s": 52.99008193425834,
+        "throughput_mbps": 1.509716480515189
+      }
+    ],
+    "scene_id": "scene_3_cubic",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "cubic",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_cubic_cubic_always_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:53:05",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3709,
+            3382,
+            3710,
+            1077,
+            3438,
+            3719,
+            3785,
+            1067
+          ],
+          "tx_bytes": [
+            10260740,
+            229719,
+            10260716,
+            76639,
+            233339,
+            10316228,
+            10504436,
+            75849
+          ],
+          "rx_packets": [
+            3437,
+            3785,
+            1067,
+            3718,
+            3709,
+            1077,
+            3383,
+            3710
+          ],
+          "rx_bytes": [
+            233253,
+            10504436,
+            75849,
+            10316118,
+            10260740,
+            76725,
+            229805,
+            10260826
+          ]
+        },
+        "timeout": false,
+        "time_s": 10.040830565616488,
+        "throughput_mbps": 7.967468375967775
+      }
+    ],
+    "scene_id": "scene_3_cubic",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "cubic",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_cubic_cubic_adaptive_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:53:18",
+      "data_size": 10000000,
+      "cca": "cubic",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3668,
+            3373,
+            3666,
+            959,
+            3427,
+            3678,
+            3733,
+            950
+          ],
+          "tx_bytes": [
+            10258014,
+            228461,
+            10257858,
+            70429,
+            231901,
+            10317822,
+            10467204,
+            69639
+          ],
+          "rx_packets": [
+            3427,
+            3733,
+            950,
+            3678,
+            3668,
+            960,
+            3373,
+            3667
+          ],
+          "rx_bytes": [
+            231901,
+            10467204,
+            69639,
+            10317822,
+            10258014,
+            70483,
+            228461,
+            10257912
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.966719744727015,
+        "throughput_mbps": 8.02671310611746
+      }
+    ],
+    "scene_id": "scene_3_cubic",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "cubic",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr_bbr_no_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:53:31",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3567,
+            3435,
+            3637,
+            3436,
+            3495,
+            3722,
+            3627,
+            3427
+          ],
+          "tx_bytes": [
+            10251292,
+            259405,
+            10460112,
+            259481,
+            263761,
+            10730554,
+            10459256,
+            258777
+          ],
+          "rx_packets": [
+            3493,
+            3628,
+            3426,
+            3721,
+            3570,
+            3437,
+            3439,
+            3639
+          ],
+          "rx_bytes": [
+            263585,
+            10459322,
+            258691,
+            10730444,
+            10251622,
+            259657,
+            259801,
+            10460222
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.325181018561125,
+        "throughput_mbps": 8.578921936289017
+      }
+    ],
+    "scene_id": "scene_3_bbr",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr_bbr_always_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:53:43",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3590,
+            3399,
+            3566,
+            3451,
+            3444,
+            3616,
+            3654,
+            3442
+          ],
+          "tx_bytes": [
+            10252854,
+            233901,
+            10251258,
+            234213,
+            236863,
+            10412238,
+            10469190,
+            233423
+          ],
+          "rx_packets": [
+            3443,
+            3652,
+            3442,
+            3615,
+            3591,
+            3451,
+            3401,
+            3567
+          ],
+          "rx_bytes": [
+            236777,
+            10469030,
+            233423,
+            10412128,
+            10252940,
+            234213,
+            234073,
+            10251368
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.115165611729026,
+        "throughput_mbps": 8.776582171700671
+      }
+    ],
+    "scene_id": "scene_3_bbr",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr_bbr_adaptive_split",
+      "protocol": "LINUX_TCP",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:53:55",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            3580,
+            3396,
+            3550,
+            3445,
+            3457,
+            3600,
+            3637,
+            3436
+          ],
+          "tx_bytes": [
+            10252158,
+            233271,
+            10250134,
+            232853,
+            237321,
+            10415482,
+            10435508,
+            232063
+          ],
+          "rx_packets": [
+            3457,
+            3637,
+            3436,
+            3600,
+            3581,
+            3445,
+            3396,
+            3551
+          ],
+          "rx_bytes": [
+            237321,
+            10435508,
+            232063,
+            10415482,
+            10252248,
+            232853,
+            233271,
+            10250220
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.164714064449072,
+        "throughput_mbps": 8.729132129755008
+      }
+    ],
+    "scene_id": "scene_3_bbr",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "bbr",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr2_bbr2_no_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:54:07",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            8227,
+            6638,
+            8412,
+            6633,
+            6736,
+            8676,
+            8398,
+            6621
+          ],
+          "tx_bytes": [
+            10740211,
+            633864,
+            10979259,
+            633438,
+            644279,
+            11343426,
+            10978043,
+            632398
+          ],
+          "rx_packets": [
+            6736,
+            8398,
+            6621,
+            8676,
+            8228,
+            6634,
+            6638,
+            8413
+          ],
+          "rx_bytes": [
+            644279,
+            10978043,
+            632398,
+            11343426,
+            10740321,
+            633524,
+            633864,
+            10979345
+          ]
+        },
+        "timeout": false,
+        "time_s": 18.806155752,
+        "throughput_mbps": 4.253926270470888
+      }
+    ],
+    "scene_id": "scene_3_bbr2",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr2",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr2_bbr2_always_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:54:30",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            8856,
+            7623,
+            9027,
+            7623,
+            7765,
+            11220,
+            9014,
+            7610
+          ],
+          "tx_bytes": [
+            10797085,
+            956527,
+            11004662,
+            956543,
+            974853,
+            13877741,
+            11003588,
+            955473
+          ],
+          "rx_packets": [
+            7763,
+            9013,
+            7610,
+            11220,
+            8858,
+            7624,
+            7625,
+            9028
+          ],
+          "rx_bytes": [
+            974677,
+            11003502,
+            955473,
+            13877741,
+            10797285,
+            956653,
+            956727,
+            11004772
+          ]
+        },
+        "timeout": false,
+        "time_s": 12.122256767,
+        "throughput_mbps": 6.599431239386154
+      }
+    ],
+    "scene_id": "scene_3_bbr2",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr2",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr2_bbr2_adaptive_split",
+      "protocol": "CLOUDFLARE_QUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:54:47",
+      "data_size": 10000000,
+      "cca": "bbr2",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            8384,
+            6948,
+            8568,
+            6950,
+            7083,
+            9459,
+            8554,
+            6937
+          ],
+          "tx_bytes": [
+            10758042,
+            744462,
+            10992878,
+            744558,
+            759110,
+            12165780,
+            10991698,
+            743488
+          ],
+          "rx_packets": [
+            7083,
+            8554,
+            6937,
+            9459,
+            8387,
+            6952,
+            6949,
+            8569
+          ],
+          "rx_bytes": [
+            759110,
+            10991698,
+            743488,
+            12165780,
+            10758296,
+            744758,
+            744552,
+            10992964
+          ]
+        },
+        "timeout": false,
+        "time_s": 12.830174791,
+        "throughput_mbps": 6.235300867149348
+      }
+    ],
+    "scene_id": "scene_3_bbr2",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "bbr2",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr3_bbr3_no_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:55:05",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": false
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7139,
+            941,
+            7303,
+            940,
+            948,
+            7302,
+            7290,
+            928
+          ],
+          "tx_bytes": [
+            10546819,
+            93947,
+            10791219,
+            93853,
+            94610,
+            10807877,
+            10790097,
+            92781
+          ],
+          "rx_packets": [
+            947,
+            7290,
+            928,
+            7302,
+            7140,
+            941,
+            941,
+            7304
+          ],
+          "rx_bytes": [
+            94610,
+            10790097,
+            92781,
+            10807877,
+            10546873,
+            93907,
+            93947,
+            10791309
+          ]
+        },
+        "timeout": false,
+        "time_s": 10.154537,
+        "throughput_mbps": 7.87825185924282
+      }
+    ],
+    "scene_id": "scene_3_bbr3",
+    "strategy": "no_split",
+    "pep": false,
+    "cca": "bbr3",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr3_bbr3_always_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:55:18",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7136,
+            966,
+            7295,
+            966,
+            968,
+            7307,
+            7285,
+            956
+          ],
+          "tx_bytes": [
+            10546656,
+            96394,
+            10785094,
+            96386,
+            96658,
+            10815386,
+            10784178,
+            95490
+          ],
+          "rx_packets": [
+            968,
+            7285,
+            955,
+            7307,
+            7137,
+            968,
+            967,
+            7296
+          ],
+          "rx_bytes": [
+            96658,
+            10784178,
+            95314,
+            10815386,
+            10546766,
+            96530,
+            96480,
+            10785148
+          ]
+        },
+        "timeout": false,
+        "time_s": 10.348834,
+        "throughput_mbps": 7.730339475925501
+      }
+    ],
+    "scene_id": "scene_3_bbr3",
+    "strategy": "always_split",
+    "pep": true,
+    "cca": "bbr3",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  },
+  {
+    "inputs": {
+      "label": "scene_3_bbr3_bbr3_adaptive_split",
+      "protocol": "PICOQUIC",
+      "num_trials": 1,
+      "start_time": "2025-12-23 06:55:31",
+      "data_size": 10000000,
+      "cca": "bbr",
+      "pep": true
+    },
+    "outputs": [
+      {
+        "success": true,
+        "statistics": {
+          "ifaces": [
+            "e1-eth0",
+            "e1-eth1",
+            "e2-eth0",
+            "e2-eth1",
+            "h1-eth0",
+            "h2-eth0",
+            "r1-eth0",
+            "r1-eth1"
+          ],
+          "tx_packets": [
+            7133,
+            912,
+            7290,
+            912,
+            914,
+            7288,
+            7279,
+            901
+          ],
+          "tx_bytes": [
+            10546167,
+            91171,
+            10777429,
+            91091,
+            91421,
+            10789813,
+            10776475,
+            90161
+          ],
+          "rx_packets": [
+            913,
+            7278,
+            901,
+            7288,
+            7134,
+            914,
+            914,
+            7293
+          ],
+          "rx_bytes": [
+            91335,
+            10776389,
+            90161,
+            10789813,
+            10546253,
+            91287,
+            91367,
+            10777711
+          ]
+        },
+        "timeout": false,
+        "time_s": 9.593758,
+        "throughput_mbps": 8.338755261493985
+      }
+    ],
+    "scene_id": "scene_3_bbr3",
+    "strategy": "adaptive_split",
+    "pep": true,
+    "cca": "bbr3",
+    "derived_rtt_ms": 80.0,
+    "derived_loss_pct": 2.0
+  }
+]

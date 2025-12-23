@@ -15,7 +15,7 @@ data/
 .ipynb_checkpoints/
 ._.
 
-results/
+
 *.log
 *.qlog
 *.bin

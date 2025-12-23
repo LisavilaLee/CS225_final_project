@@ -1,0 +1,75 @@
+{
+  "inputs": {
+    "label": "scene_3_bbr3_bbr3_no_split",
+    "protocol": "PICOQUIC",
+    "num_trials": 1,
+    "start_time": "2025-12-23 06:55:05",
+    "data_size": 10000000,
+    "cca": "bbr",
+    "pep": false
+  },
+  "outputs": [
+    {
+      "success": true,
+      "statistics": {
+        "ifaces": [
+          "e1-eth0",
+          "e1-eth1",
+          "e2-eth0",
+          "e2-eth1",
+          "h1-eth0",
+          "h2-eth0",
+          "r1-eth0",
+          "r1-eth1"
+        ],
+        "tx_packets": [
+          7139,
+          941,
+          7303,
+          940,
+          948,
+          7302,
+          7290,
+          928
+        ],
+        "tx_bytes": [
+          10546819,
+          93947,
+          10791219,
+          93853,
+          94610,
+          10807877,
+          10790097,
+          92781
+        ],
+        "rx_packets": [
+          947,
+          7290,
+          928,
+          7302,
+          7140,
+          941,
+          941,
+          7304
+        ],
+        "rx_bytes": [
+          94610,
+          10790097,
+          92781,
+          10807877,
+          10546873,
+          93907,
+          93947,
+          10791309
+        ]
+      },
+      "timeout": false,
+      "time_s": 10.154537,
+      "throughput_mbps": 7.87825185924282
+    }
+  ],
+  "scene_id": "scene_3_bbr3_bbr3_no_split",
+  "cca": "bbr",
+  "strategy": "no_split",
+  "pep": false
+}

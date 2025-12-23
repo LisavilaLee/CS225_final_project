@@ -1,0 +1,75 @@
+{
+  "inputs": {
+    "label": "scene_2_bbr3_bbr3_adaptive_split",
+    "protocol": "PICOQUIC",
+    "num_trials": 1,
+    "start_time": "2025-12-23 06:51:57",
+    "data_size": 10000000,
+    "cca": "bbr",
+    "pep": true
+  },
+  "outputs": [
+    {
+      "success": true,
+      "statistics": {
+        "ifaces": [
+          "e1-eth0",
+          "e1-eth1",
+          "e2-eth0",
+          "e2-eth1",
+          "h1-eth0",
+          "h2-eth0",
+          "r1-eth0",
+          "r1-eth1"
+        ],
+        "tx_packets": [
+          7137,
+          882,
+          7219,
+          881,
+          880,
+          7222,
+          7206,
+          869
+        ],
+        "tx_bytes": [
+          10546462,
+          88177,
+          10669398,
+          88111,
+          88133,
+          10690588,
+          10668248,
+          87067
+        ],
+        "rx_packets": [
+          879,
+          7206,
+          869,
+          7221,
+          7138,
+          881,
+          884,
+          7221
+        ],
+        "rx_bytes": [
+          88023,
+          10668248,
+          87067,
+          10690478,
+          10546548,
+          88111,
+          88377,
+          10669398
+        ]
+      },
+      "timeout": false,
+      "time_s": 9.188123,
+      "throughput_mbps": 8.70689258295737
+    }
+  ],
+  "scene_id": "scene_2_bbr3_bbr3_adaptive_split",
+  "cca": "bbr",
+  "strategy": "split",
+  "pep": true
+}

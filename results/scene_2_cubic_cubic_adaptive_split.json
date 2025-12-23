@@ -1,0 +1,75 @@
+{
+  "inputs": {
+    "label": "scene_2_cubic_cubic_adaptive_split",
+    "protocol": "LINUX_TCP",
+    "num_trials": 1,
+    "start_time": "2025-12-23 06:49:55",
+    "data_size": 10000000,
+    "cca": "cubic",
+    "pep": true
+  },
+  "outputs": [
+    {
+      "success": true,
+      "statistics": {
+        "ifaces": [
+          "e1-eth0",
+          "e1-eth1",
+          "e2-eth0",
+          "e2-eth1",
+          "h1-eth0",
+          "h2-eth0",
+          "r1-eth0",
+          "r1-eth1"
+        ],
+        "tx_packets": [
+          3805,
+          3315,
+          3704,
+          2975,
+          3334,
+          3716,
+          3829,
+          2966
+        ],
+        "tx_bytes": [
+          10267024,
+          223553,
+          10260366,
+          203005,
+          224607,
+          10321778,
+          10352980,
+          202215
+        ],
+        "rx_packets": [
+          3334,
+          3829,
+          2966,
+          3716,
+          3809,
+          2976,
+          3316,
+          3705
+        ],
+        "rx_bytes": [
+          224607,
+          10352980,
+          202215,
+          10321778,
+          10267328,
+          203059,
+          223607,
+          10260420
+        ]
+      },
+      "timeout": false,
+      "time_s": 9.009735090658069,
+      "throughput_mbps": 8.879284373516116
+    }
+  ],
+  "scene_id": "scene_2_cubic_cubic_adaptive_split",
+  "cca": "cubic",
+  "strategy": "split",
+  "pep": true
+}

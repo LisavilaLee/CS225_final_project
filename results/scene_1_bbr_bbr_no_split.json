@@ -1,0 +1,75 @@
+{
+  "inputs": {
+    "label": "scene_1_bbr_bbr_no_split",
+    "protocol": "LINUX_TCP",
+    "num_trials": 1,
+    "start_time": "2025-12-23 06:46:51",
+    "data_size": 10000000,
+    "cca": "bbr",
+    "pep": false
+  },
+  "outputs": [
+    {
+      "success": true,
+      "statistics": {
+        "ifaces": [
+          "e1-eth0",
+          "e1-eth1",
+          "e2-eth0",
+          "e2-eth1",
+          "h1-eth0",
+          "h2-eth0",
+          "r1-eth0",
+          "r1-eth1"
+        ],
+        "tx_packets": [
+          3554,
+          3421,
+          3551,
+          3419,
+          3412,
+          3584,
+          3543,
+          3411
+        ],
+        "tx_bytes": [
+          10250478,
+          230693,
+          10250264,
+          230549,
+          229939,
+          10370986,
+          10249544,
+          229849
+        ],
+        "rx_packets": [
+          3411,
+          3543,
+          3410,
+          3584,
+          3556,
+          3419,
+          3424,
+          3552
+        ],
+        "rx_bytes": [
+          229849,
+          10249544,
+          229759,
+          10370986,
+          10250678,
+          230549,
+          230983,
+          10250374
+        ]
+      },
+      "timeout": false,
+      "time_s": 8.451883424073458,
+      "throughput_mbps": 9.465345886354324
+    }
+  ],
+  "scene_id": "scene_1_bbr_bbr_no_split",
+  "cca": "bbr",
+  "strategy": "no_split",
+  "pep": false
+}

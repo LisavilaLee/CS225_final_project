@@ -1,0 +1,75 @@
+{
+  "inputs": {
+    "label": "scene_1_bbr2_bbr2_always_split",
+    "protocol": "CLOUDFLARE_QUIC",
+    "num_trials": 1,
+    "start_time": "2025-12-23 06:47:49",
+    "data_size": 10000000,
+    "cca": "bbr2",
+    "pep": true
+  },
+  "outputs": [
+    {
+      "success": true,
+      "statistics": {
+        "ifaces": [
+          "e1-eth0",
+          "e1-eth1",
+          "e2-eth0",
+          "e2-eth1",
+          "h1-eth0",
+          "h2-eth0",
+          "r1-eth0",
+          "r1-eth1"
+        ],
+        "tx_packets": [
+          9334,
+          6624,
+          9330,
+          6624,
+          6614,
+          11109,
+          9320,
+          6612
+        ],
+        "tx_bytes": [
+          10841084,
+          638718,
+          10840648,
+          638682,
+          637898,
+          13115664,
+          10839864,
+          637694
+        ],
+        "rx_packets": [
+          6613,
+          9319,
+          6611,
+          11108,
+          9337,
+          6627,
+          6628,
+          9334
+        ],
+        "rx_bytes": [
+          637698,
+          10839778,
+          637608,
+          13115554,
+          10841334,
+          638964,
+          639082,
+          10841044
+        ]
+      },
+      "timeout": false,
+      "time_s": 18.705201508,
+      "throughput_mbps": 4.27688522712706
+    }
+  ],
+  "scene_id": "scene_1_bbr2_bbr2_always_split",
+  "cca": "bbr2",
+  "strategy": "split",
+  "pep": true
+}
