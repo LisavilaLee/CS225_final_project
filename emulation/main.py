@@ -177,5 +177,32 @@ if __name__ == '__main__':
                 args.network_statistics,
             )
             result.print()
+            
+            # Save results to JSON
+            import json
+            import os
+            import sys
+            output_dir = 'results'
+            os.makedirs(output_dir, exist_ok=True)
+            output_file = os.path.join(output_dir, f"{args.label}.json")
+            # Load existing data if file exists to append/merge? 
+            # For now, simplest is to overwrite or assume unique labels.
+            # But analyze_gain.py expects a list of results if multiple runs.
+            # Let's save a single run object. analyze_gain.py might need adjustment or we should append.
+            # Let's check analyze_gain.py format expectation.
+            
+            with open(output_file, 'w', encoding='utf-8') as f:
+                 # Construct the data object matching what print() outputs but as a dict
+                 data = {
+                     'inputs': result.inputs,
+                     'outputs': result.outputs,
+                     # Add extra metadata that might be useful
+                     'scene_id': args.label, # Using label as scene_id for now
+                     'cca': args.congestion_control,
+                     'strategy': 'adaptive_split' if args.pep and 'policy' in args.label else ('no_split' if not args.pep else 'split'),
+                     'pep': args.pep
+                 }
+                 json.dump(data, f, indent=2)
+            print(f"\n[INFO] Results saved to {output_file}", file=sys.stderr)
     finally:
         net.stop()

@@ -81,15 +81,27 @@ def run_emulation(
 
     # ---- 子命令 tcp 及其参数（必须在最后） ----
     # 根据 CC 算法选择协议
-    if scene.cc in ['bbr', 'bbr3']:
+    if scene.cc == 'bbr2':
+        # BBRv2 使用 Cloudflare Quiche
         cmd += [
-            "picoquic",  # 使用 picoquic 替代 tcp
+            "cloudflare",
+            "-n",
+            str(args.n_bytes),
+            "--congestion-control",
+            "bbr2"
+        ]
+    elif scene.cc == 'bbr3':
+        # BBRv3 使用 Picoquic (其实现的最新版 BBR 即为 v3)
+        cmd += [
+            "picoquic",
             "-n",
             str(args.n_bytes),
             "--congestion-control",
             "bbr"
         ]
     else:
+        # 其他算法 (cubic, bbr 等) 使用 TCP
+        # 注意: 这里 'bbr' 将使用 Linux 内核的 TCP BBR (即 BBRv1)
         cmd += [
             "tcp",
             "-n",

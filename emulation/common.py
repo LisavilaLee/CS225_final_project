@@ -13,7 +13,7 @@ DEFAULT_SSL_CERTFILE = f'deps/certs/out/leaf_cert.pem'
 DEFAULT_SSL_KEYFILE = f'deps/certs/out/leaf_cert.key'
 DEFAULT_SSL_KEYFILE_GOOGLE = f'deps/certs/out/leaf_cert.pkcs8'
 
-SETUP_TIMEOUT = 1000  # 增加超时时间，给服务器更多启动时间
+SETUP_TIMEOUT = 20  # 增加超时时间，给服务器更多启动时间
 LINUX_TIMEOUT_EXITCODE = 124
 HTTP_OK_STATUSCODE = 200
 HTTP_TIMEOUT_STATUSCODE = 408
